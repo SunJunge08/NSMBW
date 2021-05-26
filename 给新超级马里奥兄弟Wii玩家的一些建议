@@ -1,0 +1,202 @@
+给一些正在玩新超马Wii以及改版的玩家们做个教程，写一篇专栏。
+
+### 1.游戏介绍
+游戏名：新超级马里奥兄弟Wii / New Super Mario Bros Wii
+
+ID（NTSC-US）：SMNE01
+
+开发者：Nintendo EAD
+
+平台：Wii / WiiU
+
+发行日期（最早）：2009年11月15日
+
+*改版讨论QQ群：323109322 欢迎加入。*
+
+**关于NSMBW改版系统**
+
+NSMBW的改版很多，大约有100-200个左右，并且大部分难度都很高，作者们互相抄来抄去，使得优质改版很少，孬改版很多。所以，目前来看，真正能够被称作“好改版”的，只有50个左右。
+
+我们大致可以将NSMBW的改版分为两种——原版引擎和Newer引擎。
+
+原版引擎，即在原版的基础上通过修改关卡制作成的改版。Newer引擎，即在NewerTeam（官网：https://newerteam.com/）的改版NewerSMBW的基础上通过修改大地图和关卡（有时，一些强大的作者还会自己制作道具，例如改版IntimateDoomDemo里面的青蛙装）。Newer引擎的特点是可以自由地设置内容，因此，大部分Newer引擎改版流程都很短。
+
+### 2.模拟器
+目前最好用的NGC/Wii模拟器——Dolphin
+
+官方中文网站：[Dolphin](https://cn.dolphin-emu.org/?cr=cn)
+
+**配置要求（来自Dolphin官网）**
+
+Dolphin 是一个跨平台的模拟器，可在 Windows（7 SP1 及更高版本）、Linux 和 macOS（10.12 Sierra 及更高版本）上运行。一般建议大多数用户使用 Windows，因为其更易于使用且有更多图形后端可供选择。其他类 Unix 系统（如 FreeBSD）也许能用但不受到官方支持。Dolphin 只能运行于 64 位操作系统。
+
+Dolphin 还可在装有 Android 5.0 及更高版本的 64 位 Android 设备上运行。 Android 版的 Dolphin 还在 alpha 阶段，与 PC 版相比仍有较大差距。
+
+**CPU**
+
+Dolphin 是一个双核应用程序，其性能由 IPC（每时钟周期指令数）和时钟频率决定。更多的内核不会使 Dolphin 运行更快，不过 Dolphin 用不到的“多余”内核可以代替 Dolphin 所用的内核执行后台任务，从而起到些许帮助。
+
+综上所述，适合 Dolphin 的完美 CPU 应具有高 IPC、高时钟频率以及四个或更多的内核。有了四个内核，Dolphin 就可以把两个内核用于主要模拟线程，第三个内核用于其他任务，还有一个内核用于操作系统和后台任务以免与模拟器抢占资源。
+
+*英特尔：对于英特尔处理器，基本可以说是越新越好。在同一代处理器中，i5 和 i7 之间的差异（超线程/额外核心数）对 Dolphin 来说影响不大。新一代处理器将提供更高的每时钟性能，而 K 系列处理器可以超频以获得额外性能。当心 U 和 Y 系列处理器，它们的时钟频率更低，用于 Dolphin 往往会力不从心。
+
+*AMD：在 Ryzen 系列之前，Dolphin 的运行负载与 AMD 处理器的优势并不匹配。因此，在 AMD 的处理器中我们只能推荐 Ryzen 或更新的系列来运行 Dolphin。
+
+**GPU**
+
+选择一款适用于 Dolphin 的 GPU 非常简单。显卡的性能越强，就可以在保证运行速度的前提下选择更高的分辨率，开启更多增强特性。然而最需要注意的是确保你的显卡支持 DirectX 11.1 和 OpenGL 4.4。Dolphin 模拟的游戏主机与传统 PC 的工作方式区别很大，需要用到 D3D 和 OGL 的最新功能以减少额外的性能消耗。如果你的显卡不支持这些功能，运行效率就会很低。
+
+*NVIDIA：所有新款中高档 NVIDIA GPU 都可以在高清分辨率且开启超着色器的情况下出色地运行 Dolphin 。旧款（6 年以上）且/或低端的 GPU 可能无法胜任，不推荐使用。
+
+*AMD：所有新款中高档 AMD GPU 运行开启超着色器的 Dolphin 都将有不错的表现。 AMD 在 D3D 下的表现一般比 OpenGL 下更好，因此我们建议这些 GPU 的用户选择 D3D。旧款（6 年以上）且/或低端的 GPU 可能无法胜任，不推荐使用。
+
+*英特尔：Iris Pro 核芯显卡可以在 Windows 的 D3D 中很好地运行 Dolphin，然而用于 Windows 上其他图形后端的驱动程序存在问题。我们仍然强烈建议使用功能完整的独立显卡。HD4000 之前的核芯显卡不受支持。
+
+**内存**
+
+推荐 2GB 或以上，内存的速度或容量一般对模拟速度没有影响。
+
+**模拟器设置**
+
+请直接参考这篇文章：[【Dolphin】模拟器下载，配置以及游戏下载](https://tieba.baidu.com/p/6043961383)
+
+**GeckoCode（金手指）**
+
+[新超马Wii金手指代码 / NSMBW GeckoCode](https://www.bilibili.com/read/cv9870087)
+
+**按键设置**
+
+![按键设置](https://i0.hdslb.com/bfs/article/9d6523d7581f0b43b433bfcce168796b23f17c09.png@1182w_1496h.webp)
+### 3.通关
+
+**世界地图**
+
+NSMBW共有9个世界，关卡种类很多，主要有：普通关（终点是旗杆），塔关/城堡关（终点是Boss），飞行船关（终点是小库巴），炮台关（可以跳到其他世界），奖励关（包括红、黄、绿色的蘑菇房，红色是翻牌，黄色是给一个状态，绿色是给命），遭遇关（例如W4被鱼吞下，W6被炮弹打中，无敌星可以免疫遭遇关）。
+
+![W1](https://i0.hdslb.com/bfs/article/e1ad6c54a32dcab868b3932ebe80e80371eea5f6.png@500w_136h.webp)
+
+![W2](https://i0.hdslb.com/bfs/article/f1df8169116fc32f9db245f5c88de3e187bd5b96.png@500w_608h.webp)
+
+![W3](https://i0.hdslb.com/bfs/article/4f7fc18b46968915b94838fa1de67f491f7d010a.png@500w_106h.webp)
+
+![W4](https://i0.hdslb.com/bfs/article/e89113df9b686afb6f250d12977778f7845ebe00.png@500w_314h.webp)
+
+![W5](https://i0.hdslb.com/bfs/article/e91b0e8b591ee4906b4b39d57b1ecdb1eb1d3965.png@500w_92h.webp)
+
+![W6](https://i0.hdslb.com/bfs/article/cbd799af0bef52fb09b0c3013d80e7bb288bdfb6.png@500w_650h.webp)
+
+![W7](https://i0.hdslb.com/bfs/article/605c1ee5aa2b62691229854effaefae90e6f1ca4.png@500w_180h.webp)
+
+![W8](https://i0.hdslb.com/bfs/article/5f592be0d024e4251439771e18e1f45addaff938.png@500w_570h.webp)
+
+![W9](https://i0.hdslb.com/bfs/article/522a0689c0620162ae308c6aa1c501d0a516903b.png@500w_274h.webp)
+
+**Any%通关**
+
+即任意完成度通关，Any%是speedrun规则中最常见的项目，可以理解为“速通”。
+
+**100%通关**
+
+即收集全部隐藏，全部要素通关。条件：拿完所有大金币，打开所有双出口，走完所有炮台关并跳关。
+
+**Newer引擎改版**
+
+Newer引擎改版比较随意，流程不限，所以，有可能一个改版制作了一个世界就能五星。另外，Newer引擎可以在世界地图上任意存档，实现SL的效果。还可以反复游玩蘑菇房，白嫖状态。
+
+**SL**
+
+SL大法，即Save&Load，存档与读档。模拟器中可以设置。
+
+使用SL通关会简单很多，但过度SL会减少游戏乐趣，建议关卡开头和半旗各存一次。
+
+**注意事项**
+
+100%通关要求：
+
+*收集所有大金币
+
+*打通所有隐藏出口
+
+*打完所有炮台关
+
+不要求：
+
+*救奇诺比奥
+
+*进蘑菇房
+
+4.技巧
+
+**找大金币**
+
+*注意看墙壁有没有凹陷
+
+*升降平台尽头看一看
+
+*敌人能穿过的地方人物也能走
+
+*W2沙子里，W7天空的云上
+
+*踩P后出现金币连成线就跟着走
+
+*箭头会有提示
+
+*地面有时会藏砖块
+
+**隐藏出口**
+
+*隐藏出口会影响五星通关。*
+
+鬼屋关、每个世界特定关卡会有双出口，双出口终点的旗子是红色的。
+
+注意：W2以及W6要注意双出口，不要以为大地图上的管子是摆设。
+
+**Reggie编辑器**
+
+GitHub地址：[Reggie](https://github.com/CLF78/Reggie-Next)
+
+找隐藏路线时，建议关掉Layer0，方便查找隐藏线路。
+
+**看攻略**
+
+可以在YouTube或B站等平台找，也可以私信我搬运。
+
+**改版作者与玩家**
+
+国内:
+
+[蛋老爷X](https://space.bilibili.com/14117601/)
+
+[火鸡24BA](https://space.bilibili.com/319378233/
+
+[仙境使者](https://space.bilibili.com/4026505/) 新世界重制改版的作者
+
+[打僵尸的火龙草](https://space.bilibili.com/294840926/)
+
+[2Maliao](https://space.bilibili.com/286479289/)
+
+国外：
+
+[RoyalSuperMario](http://t.cn/A6tf5uLJ)
+
+[Mullkaw](http://t.cn/A6tf5Q8S) CannonSMBW的作者
+
+[ZementBlock](http://t.cn/A6tf5B7D) 改版大佬
+
+[NewerTeam](http://t.cn/A6tf5ruK) NewerSMBW的作者
+
+
+写完了，基本上把需要说的重点问题都列出来了。
+
+有问题可以评论说，错误之处也请指出。
+
+
+注：
+
+*第一版投稿于2020-7-26
+
+*第二版投稿于2021-2-17
+
+*第三版投稿于2021-2-20
+
+*搬运到github于2021-5-26
